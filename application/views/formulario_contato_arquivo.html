@@ -1,0 +1,79 @@
+<section id="contact" class="gray-bg">
+    <div class="container">
+        <!-- Section Style 2 Start -->  
+        <div class="section-heading-2">
+            <h5 class="small-title">Contato </h5>
+            <h4 class="title">Tem um <span class="th-cl">Projeto?</span></h4>
+        </div>
+        <!-- /Section Style 2 End --> 
+        <div class="col-md-9">
+            <center>
+                <div data-aos="fade-right" class="col-md-12 col-sm-12">
+
+                    <center>
+                        <?php 
+                        if (isset($_SESSION['feedback'])) {
+                            echo $_SESSION['feedback'];
+                            unset($_SESSION['feedback']);
+                        }
+                        ?>
+                    </center>
+                </div>
+            </center>
+            <div class="row">
+               <?php $atributos = array('class'=> 'contact-form') ?>
+               <?php echo form_open(base_url('Sites/mensagem'),$atributos) ?>
+               <!--Divider Start-->
+               <div class="input-divider row">
+
+                <div data-aos="flip-right" data-aos-delay="200" class="col-md-4 col-sm-4">
+                    <div class="input-field">
+                        <input class="form-control"  
+                        value="" 
+                        id="name" 
+                        type="text"
+                        name="name" 
+                        maxlength="100" 
+                        placeholder="Seu Nome" 
+                        >
+                    </div><!--/Input Field End-->
+                </div>
+                <div data-aos="flip-right" data-aos-delay="300" class="col-md-4 col-sm-4">
+                    <div class="input-field">
+                        <input class="form-control"  
+                        value="" 
+                        type="text" 
+                        name="subject" 
+                        id="subject" 
+                        maxlength="100" 
+                        placeholder="Assunto" 
+                        >
+                    </div><!--/Input Field End-->
+                </div>
+                <div data-aos="flip-right" data-aos-delay="400" class="col-md-4 col-sm-4">
+                    <div class="input-field">
+                        <input class="form-control"  
+                        value="" 
+                        id="email" 
+                        type="email" 
+                        name="email"
+                        maxlength="100" 
+                        placeholder="Email" 
+                        >
+                    </div><!--/Input Field End-->
+                </div>
+            </div><!--/Divider End-->
+            <div class="input-field">
+                <textarea data-aos="fade-up" data-aos-delay="500" class="form-control"  rows="4" id="message"  placeholder="mensagem" name="message"></textarea>
+            </div><!--/Input Field End-->
+            <div data-aos="fade-up" data-aos-delay="600" class="input-field mb-0 text-left">
+                <input class="btn th-bg" type="submit" value="Enviar Mensagem" data-loading-text="carregando">
+            </div><!--/Input Field End-->
+        </form>
+    </div>
+</div>
+</div>
+<div class="contact-section-map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.650820870424!2d-48.47085148574647!3d-27.604353282834616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273eb9fe3f6b25%3A0xa774d6b795f7f118!2sAv.+Afonso+Delambert+Neto%2C+555+-+Lagoa+da+Concei%C3%A7%C3%A3o%2C+Florian%C3%B3polis+-+SC%2C+88062-030!5e0!3m2!1spt-BR!2sbr!4v1546544954692"></iframe>
+</div>
+</section>
