@@ -148,7 +148,7 @@
 
 <hr style="border: 1px solid #122740;">
 
-<div class="col-md-12" style="margin-bottom: 5em;"> 
+<div class="col-md-12" style="margin-bottom: 1em;"> 
   <p style="color:#122740"><?=$superbanner->texto2;?></p>
 </div>
 
@@ -175,7 +175,7 @@
         <li><a style="color:#fff;" href="#">VÍDEO</a></li>
         <li><a style="color:#fff;" href="#">MOCK-UP</a></li>
         <li><a style="color:#fff;" href="#">GUIA DE JOGOS NA TV</a></li>
-        <li><a style="color:#fff;" href="#">CHUTEIRAS DO FUTEOL</a></li>
+        <li><a style="color:#fff;" href="#">CHUTEIRAS DO FUTEBOL</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">

@@ -22,6 +22,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
 
+    <!-- CKEDITOR -->
+<script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+
+
 </head>
 
 

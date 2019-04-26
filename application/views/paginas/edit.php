@@ -44,19 +44,19 @@
                 <label class="control-label">Email address</label>
                 <input type="email" class="form-control" name="email" value="<?=$pagina->email;?>">
             </div>
-               <div class="form-group label-floating col-md-6">
+            <div class="form-group label-floating col-md-6">
                 <label class="control-label">Link </label>
                 <input type="text" class="form-control" name="texto1" value="<?=$pagina->texto1;?>">
             </div>
-               <div class="form-group label-floating col-md-6">
+            <div class="form-group label-floating col-md-6">
                 <label class="control-label">Texto  2</label>
                 <input type="text" class="form-control" name="texto2" value="<?=$pagina->texto2;?>">
             </div>
-               <div class="form-group label-floating col-md-6">
+            <div class="form-group label-floating col-md-6">
                 <label class="control-label">Texto  3</label>
                 <input type="text" class="form-control" name="texto3" value="<?=$pagina->texto3;?>">
             </div>
-                 <div class="form-group label-floating col-md-6">
+            <div class="form-group label-floating col-md-6">
                 <label class="control-label">Texto  4</label>
                 <input type="text" class="form-control" name="texto4" value="<?=$pagina->texto4;?>">
             </div>
@@ -92,21 +92,32 @@
         </div>
 
         <div class="form-group label-floating col-md-12">
-         <label class="control-label">Texto 5</label>
-         <textarea type="text" class="form-control" rows="5"  name="texto"> 
-          <?=$pagina->texto?>
-      </textarea>
-  </div>
-  <div class="form-group label-floating col-md-12">
-    <button class="btn btn-primary pull-right" type="submmit">Atualizar</button>
+           <label class="control-label">Texto 5</label>
+           <textarea type="text" class="form-control" rows="5"  name="texto" id="editor"> 
+              <?=$pagina->texto?>
+          </textarea>
+          <!-- SCRIPT CKEDITOR -->
+          <script>
+            ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .then( editor => {
+                console.log( editor );
+            } )
+            .catch( error => {
+                console.error( error );
+            } );
+        </script>
+    </div>
+    <div class="form-group label-floating col-md-12">
+        <button class="btn btn-primary pull-right" type="submmit">Atualizar</button>
 
-    <a href="<?=base_url()?>Paginas" class="btn pull-right">
-        <span class="btn-label ">
-            <i class="material-icons">keyboard_arrow_left</i>
-        </span>
-        Retornar
-    </a>
-</div>
+        <a href="<?=base_url()?>Paginas" class="btn pull-right">
+            <span class="btn-label ">
+                <i class="material-icons">keyboard_arrow_left</i>
+            </span>
+            Retornar
+        </a>
+    </div>
 
 </form>
 </div>
