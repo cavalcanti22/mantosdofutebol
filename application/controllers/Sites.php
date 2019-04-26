@@ -13,7 +13,7 @@ class Sites extends CI_Controller {
 
 	public function index(){
 
-		$data['titulo'] 		= 'Cupom Mantos do Futebol';
+		// $data['titulo'] 		= 'Cupom FutFanatics Abril 2019 | Desconto em camisas de futebol';
 		$data['view'] 			= 'sites/index';
 		$data['header'] 		= $this->modelpaginas->getPagina(md5(1));
 		$data['footer'] 		= $this->modelpaginas->getPagina(md5(2));

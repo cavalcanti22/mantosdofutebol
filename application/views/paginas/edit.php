@@ -45,7 +45,7 @@
                 <input type="email" class="form-control" name="email" value="<?=$pagina->email;?>">
             </div>
                <div class="form-group label-floating col-md-6">
-                <label class="control-label">Texto  1</label>
+                <label class="control-label">Link </label>
                 <input type="text" class="form-control" name="texto1" value="<?=$pagina->texto1;?>">
             </div>
                <div class="form-group label-floating col-md-6">
@@ -92,7 +92,7 @@
         </div>
 
         <div class="form-group label-floating col-md-12">
-         <label class="control-label">Texto</label>
+         <label class="control-label">Texto 5</label>
          <textarea type="text" class="form-control" rows="5"  name="texto"> 
           <?=$pagina->texto?>
       </textarea>

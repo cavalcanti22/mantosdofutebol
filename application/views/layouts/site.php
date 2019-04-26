@@ -13,7 +13,8 @@
 
   <link rel="icon" href="assets/site/Logo-Mantos_header.png"  type="image/png">
 
-  <title><?=$titulo?></title>
+  <!-- <title><?=$titulo?></title> -->
+  <title><?=$header->titulo;?>| Desconto em camisas de futebol</title>
 
   <style type="text/css">
    .tra{
@@ -72,19 +73,7 @@
 
 
 </style>
-<script>
 
-  function openWindow( url )
-
-  {
-
-    window.open(url, '_blank', "shilpijain" ,"modal=no");
-
-    window.focus();
-
-  }
-
-</script>
 </head>
 <body >
 

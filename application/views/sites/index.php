@@ -1,12 +1,13 @@
  <div class="container">
- <div class="row">
-   <div class="col col-md-12" style="margin-top: 2em;">
-    <a href="<?=$bannertopo->texto1;?>" target="_blank"><img src="<?=$bannertopo->imagem;?>" class="imagemCenter" style="width:100%;"></a>
-  </div>
- </div>
+
   <div class="row">
    <div class="col col-md-12">
     <img src="<?=$header->imagem; ?>" class="imagemCenter logotopo" style="width:20%;">
+  </div>
+ </div>
+  <div class="row" style="margin-bottom: 2em;">
+   <div class="col col-md-12" >
+    <a href="<?=$bannertopo->texto1;?>" target="_blank"><img src="<?=$bannertopo->imagem;?>" class="imagemCenter" style="width:100%;"></a>
   </div>
  </div>
  </div>
@@ -50,6 +51,14 @@
             </button>
           </div>
           <div class="modal-body">
+  <div class="form-row align-items-center">
+    <div class="form-group col col-md-8">
+      <input type="text" class="form-control" id="inlineFormInputName" placeholder="<?=$cupom->code;?>">
+    </div>
+    <div class="form-group col col-md-4">
+      <button type="submit" class="btn btn-primary">Copiar</button>
+    </div>
+  </div>
            <div class="form-group col col-md-12">
             <h3 id="<?=$cupom->id;?>" class=" text-center"><b><?=$cupom->code;?></b> </h3>
 
@@ -114,7 +123,7 @@
       <h4 class="my-0 font-weight-normal"><?=$cupom->title;?></h4>
     </div>
     <div class="card-body">
-      <h1 class="card-title pricing-card-title"><?=$cupom->value;?><small class="text-muted">OFF</small></h1>
+      <h2 class="card-title pricing-card-title"><?=$cupom->value;?><small class="text-muted">OFF</small></h2>
       <p>
        <?=$cupom->text3;?>
      </p>
@@ -128,38 +137,57 @@
 </div>
 <?php endforeach ?>
 
+
+<div class="col-md-12" style="margin-bottom: 5em;"> 
+  <p style="color:#122740"><?=$superbanner->texto;?></p>
+</div>
+
 <div class="col-md-12" style="margin-bottom: 5em;"> 
   <a href="<?=$superbanner->texto1;?>" target="_blank"><img src="<?=$superbanner->imagem;?>" class="imagemCenter bannerFooter"></a>
 </div>
+
+<hr style="border: 1px solid #122740;">
+
+<div class="col-md-12" style="margin-bottom: 5em;"> 
+  <p style="color:#122740"><?=$superbanner->texto2;?></p>
+</div>
+
+</div>
+<!---------------------------------------------- fim do container --------------------------------->
+
 <!---------------------------------------------- footer --------------------------------->
-<footer class="pt-4 my-md-5 pt-md-5 border-top" style="box-shadow: 9px -5px 0px 5px #122740;">
+
+<footer class="col-md-12" style="background-color:#122740;padding: 2em;">
   <div class="row">
     <div class="col-12 col-md">
-      <img class="mb-2" src="<?=$footer->imagem ?>" alt="" width="100" height="100">
-      <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+      <img class="mb-2" src="<?=$footer->imagem ?>" alt="" width="130" height="130">
     </div>
     <div class="col-6 col-md">
-      <h5>Destaques</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Brasileiros</a></li>
-        <li><a class="text-muted" href="#">Internacionais</a></li>
-        <li><a class="text-muted" href="#">Seleções</a></li>
+        <li><a style="color:#fff;" href="#">UNIFORMES</a></li>
+        <li><a style="color:#fff;" href="#">MARKENTING</a></li>
+        <li><a style="color:#fff;" href="#">HISTÓRIA</a></li>
+        <li><a style="color:#fff;" href="#">TOP</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
-      <h5>Informações</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Jogos na tv</a></li>
-        <li><a class="text-muted" href="#">Camisas de futebol</a></li>
+        <li><a style="color:#fff;" href="#">VÍDEO</a></li>
+        <li><a style="color:#fff;" href="#">MOCK-UP</a></li>
+        <li><a style="color:#fff;" href="#">GUIA DE JOGOS NA TV</a></li>
+        <li><a style="color:#fff;" href="#">CHUTEIRAS DO FUTEOL</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
-      <h5>Sobre</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Quem Somos</a></li>
-        <li><a class="text-muted" href="#">Contato</a></li>
+        <li><a style="color:#fff;" href="#">FACEBOOK</a></li>
+        <li><a style="color:#fff;" href="#">INSTAGRAM</a></li>
+        <li><a style="color:#fff;" href="#">TWITTER</a></li>
+        <li><a style="color:#fff;" href="#">YOUTUBE</a></li>
       </ul>
     </div>
   </div>
+  <div class="col-md-12" style="margin-top: 50px;">
+  <p class="text-center" style="color:#fff;font-size:0.7em;">&copy; 2011 - 2019 - Mantos do Futebol - MDF - Todos os direitos reservados</p>
+  </div>
 </footer>
-</div>
