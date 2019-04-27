@@ -2,20 +2,20 @@
 
   <div class="row">
    <div class="col col-md-12">
-    <img src="<?=$header->imagem; ?>" class="imagemCenter logotopo" style="width:20%;">
+    <img src="<?=$header->imagem; ?>" class="imagemCenter logotopo" alt="logomantosdofutebol" style="width:20%;">
   </div>
  </div>
   <div class="row" style="margin-bottom: 2em;">
    <div class="col col-md-12" >
-    <a href="<?=$bannertopo->texto1;?>" target="_blank"><img src="<?=$bannertopo->imagem;?>" class="imagemCenter" style="width:100%;"></a>
+    <a href="<?=$bannertopo->texto1;?>" target="_blank"><img src="<?=$bannertopo->imagem;?>" alt="bannerfutfanatics" class="imagemCenter" style="width:100%;"></a>
   </div>
  </div>
  </div>
  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow cormenu" >
-  <h5 class="my-0 mr-md-auto font-weight-normal">Mantos do Futebol</h5>
+  <a class="my-0 mr-md-auto font-weight-normal" href="<?=base_url()?>" style="color:#fff!important;text-decoration: none;">Mantos do Futebol</a>
   <nav class="my-2 my-md-0 mr-md-3" >
-    <a class="p-2 text-dark" href="#" style="color:#fff!important;">Quem Somos</a>
-    <a class="p-2 text-dark" href="#" style="color:#fff!important;">Contato</a>
+    <a class="p-2 text-dark" href="#" style="color:#fff!important;text-decoration: none;">Quem Somos</a>
+    <a class="p-2 text-dark" href="#" style="color:#fff!important;text-decoration: none;">Contato</a>
   </nav>
   <!-- <a class="btn btn-outline-primary" href="#">Mantos do Futebol</a> -->
 </div>
@@ -45,7 +45,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"><?=$cupom->text1;?></h5>
+            <h2 class="modal-title" id="exampleModalLabel"><?=$cupom->text1;?></h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -143,7 +143,7 @@
 </div>
 
 <div class="col-md-12" style="margin-bottom: 5em;"> 
-  <a href="<?=$superbanner->texto1;?>" target="_blank"><img src="<?=$superbanner->imagem;?>" class="imagemCenter bannerFooter"></a>
+  <a href="<?=$superbanner->texto1;?>" target="_blank"><img src="<?=$superbanner->imagem;?>" class="imagemCenter bannerFooter" alt="bannerfutfanatics"></a>
 </div>
 
 <hr style="border: 1px solid #122740;">
@@ -160,30 +160,30 @@
 <footer class="col-md-12" style="background-color:#122740;padding: 2em;">
   <div class="row">
     <div class="col-12 col-md">
-      <img class="mb-2" src="<?=$footer->imagem ?>" alt="" width="130" height="130">
+      <img class="mb-2" src="<?=$footer->imagem ?>" alt="logomantosdofutebol" width="130" height="130">
     </div>
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
-        <li><a style="color:#fff;" href="#">UNIFORMES</a></li>
-        <li><a style="color:#fff;" href="#">MARKENTING</a></li>
-        <li><a style="color:#fff;" href="#">HISTÓRIA</a></li>
-        <li><a style="color:#fff;" href="#">TOP</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">UNIFORMES</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">MARKENTING</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">HISTÓRIA</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">TOP</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
-        <li><a style="color:#fff;" href="#">VÍDEO</a></li>
-        <li><a style="color:#fff;" href="#">MOCK-UP</a></li>
-        <li><a style="color:#fff;" href="#">GUIA DE JOGOS NA TV</a></li>
-        <li><a style="color:#fff;" href="#">CHUTEIRAS DO FUTEBOL</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">VÍDEO</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">MOCK-UP</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">GUIA DE JOGOS NA TV</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">CHUTEIRAS DO FUTEBOL</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
-        <li><a style="color:#fff;" href="#">FACEBOOK</a></li>
-        <li><a style="color:#fff;" href="#">INSTAGRAM</a></li>
-        <li><a style="color:#fff;" href="#">TWITTER</a></li>
-        <li><a style="color:#fff;" href="#">YOUTUBE</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">FACEBOOK</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">INSTAGRAM</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">TWITTER</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="#">YOUTUBE</a></li>
       </ul>
     </div>
   </div>
