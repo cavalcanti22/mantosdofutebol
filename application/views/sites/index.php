@@ -4,14 +4,14 @@
    <div class="col col-md-12">
     <img src="<?=$header->imagem; ?>" class="imagemCenter logotopo" alt="logomantosdofutebol" style="width:20%;">
   </div>
- </div>
-  <div class="row" style="margin-bottom: 2em;">
-   <div class="col col-md-12" >
-    <a href="<?=$bannertopo->texto1;?>" target="_blank"><img src="<?=$bannertopo->imagem;?>" alt="bannerfutfanatics" class="imagemCenter" style="width:100%;"></a>
-  </div>
- </div>
- </div>
- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow cormenu" >
+</div>
+<div class="row" style="margin-bottom: 2em;">
+ <div class="col col-md-12" >
+  <a href="<?=$bannertopo->texto1;?>" target="_blank"><img src="<?=$bannertopo->imagem;?>" alt="bannerfutfanatics" class="imagemCenter" style="width:100%;"></a>
+</div>
+</div>
+</div>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow cormenu" >
   <a class="my-0 mr-md-auto font-weight-normal" href="<?=base_url()?>" style="color:#fff!important;text-decoration: none;">Mantos do Futebol</a>
   <nav class="my-2 my-md-0 mr-md-3" >
     <a class="p-2 text-dark" href="#" style="color:#fff!important;text-decoration: none;">Quem Somos</a>
@@ -24,7 +24,7 @@
   <h1 class="display-4"><?=$header->titulo;?></h1>
   <p class="lead"><?=$header->subtitulo;?></p>
 </div>
- 
+
 
 <div class="container">
 
@@ -41,30 +41,31 @@
 
     <?php foreach ($cupons as $cupom): ?>
      <!-- Modal -->
-     <div class="modal fade" id="<?=$cupom->code;?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal fade" id="<?=$cupom->code;?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" >
             <h2 class="modal-title" id="exampleModalLabel"><?=$cupom->text1;?></h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-  <div class="form-row align-items-center">
-    <div class="form-group col col-md-8">
-      <input type="text" class="form-control" id="inlineFormInputName" placeholder="<?=$cupom->code;?>">
-    </div>
-    <div class="form-group col col-md-4">
-      <button type="submit" class="btn btn-primary">Copiar</button>
-    </div>
-  </div>
+          <div class="modal-body" style="background-color: #F2F2F2;">
+
            <div class="form-group col col-md-12">
+             <div class="form-row align-items-center" >
+              <div class="form-group col col-md-8">
+                <input type="text" class="form-control" id="inlineFormInputName" placeholder="<?=$cupom->code;?>">
+              </div>
+              <div class="form-group col col-md-4">
+                <a href="<?=$cupom->link;?>" target="_blank"><button type="submit" class="btn btn" style="background-color: #FF7349;color:#fff;">Copiar</button></a>
+              </div>
+            </div>
             <h3 id="<?=$cupom->id;?>" class=" text-center"><b><?=$cupom->code;?></b> </h3>
 
             <a href="<?=$cupom->link;?>"  style="text-decoration: none;" target="_blank"><button onclick="copy('<?=$cupom->id;?>')" class="btn btn-danger btn-lg btn-block botao">Copie o código & Ir para a loja</button> </a>
             <!-- Abre pop up -->
-         <!--   <a href="<?=$cupom->link;?>" onclick="javascript:openWindow(this.href);return false;" style="text-decoration: none;" target="_blank"><button onclick="copy('<?=$cupom->id;?>')" class="btn btn-danger btn-lg btn-block botao">Copie o código & Ir para a loja</button> </a> -->
+            <!--   <a href="<?=$cupom->link;?>" onclick="javascript:openWindow(this.href);return false;" style="text-decoration: none;" target="_blank"><button onclick="copy('<?=$cupom->id;?>')" class="btn btn-danger btn-lg btn-block botao">Copie o código & Ir para a loja</button> </a> -->
 
           </div>
 
@@ -83,7 +84,7 @@
           </script>
 
           <p class="text-center ">
-            <a   data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a   data-toggle="collapse" style="color:#FF7349;text-decoration: none;" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
               Detalhes
             </a>
 
@@ -91,21 +92,21 @@
           <div class="collapse" id="collapseExample">
             <div class="card card-body">
               <p class="text-muted">
-               <?=$cupom->text2;?>
-             </p>
-           </div>
-         </div>
+                <center> <?=$cupom->text2;?></center>
+              </p>
+            </div>
+          </div>
 
-         <?php echo form_open('Sites/subscribe');?>
+          <?php echo form_open('Sites/subscribe');?>
 
-         <div class="form-group col col-md-12">
-          <label for="exampleInputEmail1"><?=$cupom->text4;?> <b>Inscreva-se abaixo!</b></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email">
-          <!--    <small id="emailHelp" class="form-text text-muted">Nunca perca um desconto da FutFanatics outra vez! Inscreva-se abaixo!</small> -->
-        </div>
-        <button type="submit" name="submit" class="btn btn-primary float-right"><i class="material-icons md-18">email</i></button>
-      </form>
-    </div>
+          <div class="form-group col col-md-12">
+            <center><p><?=$cupom->text4;?></p></center> 
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email">
+            <!--    <small id="emailHelp" class="form-text text-muted">Nunca perca um desconto da FutFanatics outra vez! Inscreva-se abaixo!</small> -->
+          </div>
+          <button type="submit" name="submit" class="btn btn float-right" style="background-color:#FF7349;"><i class="material-icons md-18" style="color: #fff;">email</i></button>
+        </form>
+      </div>
     <!--     <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-dismiss="modal">fechar</button>
           </div> -->
@@ -128,7 +129,7 @@
        <?=$cupom->text3;?>
      </p>
      <div class="wrapper tra">
-    <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#<?=$cupom->code;?>" >
+      <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#<?=$cupom->code;?>" >
         <?=$cupom->button;?>
       </button>
     </div>   
@@ -188,6 +189,6 @@
     </div>
   </div>
   <div class="col-md-12" style="margin-top: 50px;">
-  <p class="text-center" style="color:#fff;font-size:0.7em;">&copy; 2011 - 2019 - Mantos do Futebol - MDF - Todos os direitos reservados</p>
+    <p class="text-center" style="color:#fff;font-size:0.7em;">&copy; 2011 - 2019 - Mantos do Futebol - MDF - Todos os direitos reservados</p>
   </div>
 </footer>
