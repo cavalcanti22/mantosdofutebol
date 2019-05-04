@@ -1,5 +1,6 @@
  <div class="container">
 
+
   <div class="row">
    <div class="col col-md-12">
     <img src="<?=$header->imagem; ?>" class="imagemCenter logotopo" alt="logomantosdofutebol" style="width:20%;">
@@ -68,6 +69,7 @@
          <!--   <a href="<?=$cupom->link;?>" onclick="javascript:openWindow(this.href);return false;" style="text-decoration: none;" target="_blank"><button onclick="copy('<?=$cupom->id;?>')" class="btn btn-danger btn-lg btn-block botao">Copie o código & Ir para a loja</button> </a> -->
 
           </div>
+
 
           <div id="target" contentEditable="true"></div>
           <script type="text/javascript">
@@ -165,26 +167,26 @@
     </div>
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
-        <li><a style="color:#fff;text-decoration: none;" href="#">UNIFORMES</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">MARKENTING</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">HISTÓRIA</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">TOP</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://mantosdofutebol.com.br/category/lancamentos/" target="_blank">UNIFORMES</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://mantosdofutebol.com.br/category/marketing/" target="_blank">MARKENTING</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://mantosdofutebol.com.br/category/historia/" target="_blank">HISTÓRIA</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://mantosdofutebol.com.br/category/top/" target="_blank">TOP</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
-        <li><a style="color:#fff;text-decoration: none;" href="#">VÍDEO</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">MOCK-UP</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">GUIA DE JOGOS NA TV</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">CHUTEIRAS DO FUTEBOL</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://mantosdofutebol.com.br/category/videos/" target="_blank">VÍDEO</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://mantosdofutebol.com.br/category/mock-up/" target="_blank">MOCK-UP</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://mantosdofutebol.com.br/guia-de-jogos-tv-hoje-ao-vivo/" target="_blank">GUIA DE JOGOS NA TV</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="http://chuteirasdofutebol.com.br/" target="_blank">CHUTEIRAS DO FUTEBOL</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
-        <li><a style="color:#fff;text-decoration: none;" href="#">FACEBOOK</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">INSTAGRAM</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">TWITTER</a></li>
-        <li><a style="color:#fff;text-decoration: none;" href="#">YOUTUBE</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://www.facebook.com/MantosdoFutebol.com.br/" target="_blank">FACEBOOK</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://www.instagram.com/mantosdofutebol.com.br/" target="_blank">INSTAGRAM</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://twitter.com/mantosdofutebol" target="_blank">TWITTER</a></li>
+        <li><a style="color:#fff;text-decoration: none;" href="https://youtube.com/mantosfutebol" target="_blank">YOUTUBE</a></li>
       </ul>
     </div>
   </div>
